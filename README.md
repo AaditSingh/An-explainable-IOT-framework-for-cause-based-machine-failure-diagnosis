@@ -3,6 +3,8 @@ This project implements a **Causal Discovery Engine** designed to perform Root C
 
 By engineering an event-windowed matrix with 30-step temporal lags, the Java-based OLS (Ordinary Least Squares) engine successfully isolates high-entropy failure states from steady-state operational noise, autonomously diagnosing mechanical overstrain as the root cause of temperature spikes.
 
+Link of the submitted dataset: https://ieee-dataport.org/documents/granger-causal-failure-vectors-extracted-thermal-mechanical-signals-ai4i-2020-dataset
+
 ## Architecture & Technologies
 * **Language:** Java 20
 * **Math Engine:** Apache Commons Math (v3.6.1)
@@ -16,6 +18,6 @@ By engineering an event-windowed matrix with 30-step temporal lags, the Java-bas
 * Note:The Java engine relies on a pre-calculated temporal matrix. Ensure that the milling_causal_view exists in your Oracle database.
 
 ## Running the Causality Engine
-Once the data is staged in the database view, execute the Java application.
-Ensure commons-math3-3.6.1.jar and ojdbc8.jar are on your classpath.
-Compile and run CausalDiscoveryEngine.java.
+* Once the data is staged in the database view, execute the Java application.
+* Ensure commons-math3-3.6.1.jar and ojdbc8.jar are on your classpath.
+* Compile and run CausalDiscoveryEngine.java.
